@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="/add" method="post">
+    <h1>The Dojo Message Board</h1>
+    Name:<input type="text" name="name" id="name"> <br>
+    Your Message: <br>
+    <textarea name="quote" id="quote" cols="30" rows="7"></textarea> <br>
+    <input type="submit" value="Add my Quote">
+    </form>
+    <% for (var x of users) { %>
+    <h3>Name: <%= x.name %></h3>
+    <h3>Message: <%= x.message %></h3>
+    <% } %> <br>
+</body>
+</html>
